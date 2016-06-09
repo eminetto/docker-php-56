@@ -6,7 +6,7 @@ RUN locale-gen en_US.UTF-8 \
 	&& apt-get install -y language-pack-en-base \
 	&& LC_ALL=en_US.UTF-8 add-apt-repository -y ppa:ondrej/php \
 	&& apt-get update \
-    && apt-get -y install apache2 libapache2-mod-php5.6 php5.6 php5.6-cli php-xdebug sqlite3 php5.6-mysql php-apcu php-imagick php-memcached php-pear curl imagemagick php5.6-dev php5.6-phpdbg php5.6-gd npm nodejs-legacy php5.6-json php5.6-curl php5.6-sqlite3 php5.6-pgsql php5.6-intl apache2 vim git-core wget libsasl2-dev libssl-dev libsslcommon2-dev libcurl4-openssl-dev mercurial \
+    && apt-get -y install apache2 libapache2-mod-php5.6 php5.6 php5.6-cli php5.6-mbstring php-xdebug sqlite3 php5.6-mysql php-apcu php-imagick php-memcached php-pear curl imagemagick php5.6-dev php5.6-phpdbg php5.6-gd npm nodejs-legacy php5.6-json php5.6-curl php5.6-sqlite3 php5.6-pgsql php5.6-intl apache2 vim git-core wget libsasl2-dev libssl-dev libsslcommon2-dev libcurl4-openssl-dev mercurial \
 	&& a2enmod headers \
 	&& a2enmod rewrite \
 	&& npm install -g grunt-cli bower
